@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+h2 {
+    border-bottom: 3px solid #2193b0;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #2193b0;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.project-card {
+    background: white;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #2193b0;
+}
+
+a {
+    color: #2193b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #2193b0;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    header {
+        padding: 30px 0;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header p {
+        font-size: 16px;
+    }
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1, header p {
+    animation: fadeIn 1s ease-out;
+}
+
+header p {
+    animation-delay: 0.3s;
+}
